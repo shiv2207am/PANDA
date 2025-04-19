@@ -384,4 +384,17 @@ body {
   opacity: 0;
 }
 
+@media (max-width: 768px) {
+  .wrapper{
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .song-details {
+    text-align: center;
+  }
+
+  /* adjust album image, text sizes, etc.for smaller screens */
+
 /*# sourceMappingURL=main.css.map */
