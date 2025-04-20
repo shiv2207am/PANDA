@@ -215,27 +215,6 @@ new Vue({
       vm.nextTrack();
       this.isTimerPlaying = true;
     };
-  
-    // preload images
-    for (let index = 0; index < this.tracks.length; index++) {
-      const element = this.tracks[index];
-      let link = document.createElement('link');
-      link.rel = "prefetch";
-      link.href = element.cover;
-      link.as = "image"
-      document.head.appendChild(link)
-    }
-  
-    // ✅ Add this mobile scroll logic here:
-    this.$nextTick(() => {
-      if (window.innerWidth < 768) {
-        const details = document.querySelector('.song-details');
-        if (details) {
-          details.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    });
-  
 
     // this is optional (for preload covers)
     for (let index = 0; index < this.tracks.length; index++) {
