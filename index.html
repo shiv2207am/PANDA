@@ -56,10 +56,7 @@
         </div>
         <div class="progress" ref="progress">
           <div class="progress__top">
-            <div class="album-info song-details" v-if="currentTrack">
-            <div class="album-info__item -title">{{ currentTrack.title }}</div>
-            <div class="album-info__item -artist">{{ currentTrack.artist }}</div>
-          </div>
+            <div class="album-info" v-if="currentTrack">
               <div class="album-info__name">{{ currentTrack.artist }}</div>
               <div class="album-info__track">{{ currentTrack.name }}</div>
             </div>
